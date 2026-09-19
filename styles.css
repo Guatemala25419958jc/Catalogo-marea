@@ -80,6 +80,8 @@ h2 { font-size: clamp(2rem, 3.6vw, 3.2rem); letter-spacing: -.005em; }
 .product h3 { font-size: 1.55rem; }
 .product .price { font-size: 1.05rem; font-weight: 500; white-space: nowrap; }
 .product p { margin-top: .4rem; color: var(--tostado); font-size: .95rem; max-width: 28rem; }
+.product-whatsapp { display: inline-block; margin-top: 1.1rem; padding: .7rem .9rem; border: 1px solid var(--laton); color: var(--carbon); text-decoration: none; font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; transition: background .25s, color .25s, transform .25s; }
+.product-whatsapp:hover { background: #25d366; color: #fff; border-color: #25d366; transform: translateY(-2px); }
 .products-foot { margin-top: 3.25rem; }
 
 /* Banda oscura */
