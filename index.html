@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MAREA | Muebles y decoración</title>
+  <meta name="description" content="MAREA: muebles de diseño para sala, comedor, dormitorio y exterior.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="#inicio" aria-label="MAREA, inicio">MAREA</a>
+  <nav aria-label="Principal">
+    <a href="#coleccion">Colección</a>
+    <a href="#categorias">Categoría</a>
+    <a href="#inspiracion">Inspiración</a>
+    <a href="#nosotros">Sobre nosotros</a>
+  </nav>
+</header>
+
+<main id="inicio">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <h1 id="hero-title">Diseño atemporal.<br><em>Hecho para la vida real.</em></h1>
+      <p>Muebles de líneas serenas y materiales nobles, pensados para elevar la forma en que vives tu casa.</p>
+      <div class="hero-actions">
+        <a class="btn btn-light" href="#categorias">Explora la colección</a>
+        <a class="btn btn-line" href="#nosotros">Conoce MAREA</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="images/hero.jpg" alt="Sala moderna con sofá curvo y luz natural">
+    </div>
+  </section>
+
+  <section class="categories-band" id="categorias" aria-labelledby="cat-title">
+    <div id="categorias-vista" class="categories-layout">
+      <div class="categories-intro">
+        <h2 id="cat-title">Categorías</h2>
+        <p>Descubre nuestras colecciones, hechas con materiales elegidos y atención al detalle. Elige un ambiente para ver sus seis piezas.</p>
+      </div>
+      <div id="categorias-lista" class="categories-grid"></div>
+    </div>
+
+    <div id="productos-vista" class="products-view" hidden>
+      <div class="products-head">
+        <button class="btn btn-dark" type="button" data-volver>Volver a las categorías</button>
+        <h2 id="productos-titulo" tabindex="-1"></h2>
+        <p id="productos-frase"></p>
+      </div>
+      <div id="productos-lista" class="products-grid"></div>
+      <div class="products-foot">
+        <button class="btn btn-dark" type="button" data-volver>Volver a las categorías</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-band" id="coleccion" aria-labelledby="col-title">
+    <div class="feature-copy">
+      <h2 id="col-title">Diseño moderno,<br><em>redefinido.</em></h2>
+      <p>Cada pieza de la colección equilibra forma, función y oficio. Sin ruido: solo lo necesario, bien hecho.</p>
+      <a class="btn btn-line" href="#categorias">Descubrir la colección</a>
+    </div>
+    <div class="feature-photo">
+      <img src="images/dormitorio-1.jpg" alt="Mesa de noche de madera con lámpara y luz cálida" loading="lazy">
+    </div>
+  </section>
+
+  <section class="benefits" aria-label="Por qué elegir MAREA">
+    <div class="benefit">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M8.5 13.5 7 21l5-2.5 5 2.5-1.5-7.5"/></svg>
+      <div><strong>Calidad premium</strong><span>Piezas elaboradas con materiales de primera.</span></div>
+    </div>
+    <div class="benefit">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20 20 4M14 4h6v6M4 14v6h6"/></svg>
+      <div><strong>A tu medida</strong><span>Muebles personalizados para tu espacio.</span></div>
+    </div>
+    <div class="benefit">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6h12v10H2zM14 9h4l4 4v3h-8z"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>
+      <div><strong>Envíos seguros</strong><span>Empaque cuidado y entrega confiable.</span></div>
+    </div>
+    <div class="benefit">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.2 8 8 9 4.8-1 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg>
+      <div><strong>Diseño atemporal</strong><span>Piezas que duran generaciones.</span></div>
+    </div>
+  </section>
+
+  <section class="inspiration" id="inspiracion" aria-labelledby="ins-title">
+    <div class="inspiration-copy">
+      <h2 id="ins-title">Inspiración</h2>
+      <p>Mezcla maderas oscuras con textiles claros, deja aire entre las piezas y usa una luz cálida por ambiente. Así se logran espacios que se sienten tranquilos.</p>
+    </div>
+    <div class="inspiration-photos">
+      <img src="images/exterior.jpg" alt="Terraza con silla colgante y jardín" loading="lazy">
+      <img src="images/comedor.jpg" alt="Comedor con mesa larga y lámpara colgante" loading="lazy">
+    </div>
+  </section>
+
+  <section class="about" id="nosotros" aria-labelledby="nos-title">
+    <h2 id="nos-title">Sobre nosotros</h2>
+    <div class="about-text">
+      <p>MAREA diseña muebles y decoración pensados para durar. Trabajamos con maderas, fibras naturales y acabados que ganan carácter con el uso.</p>
+      <p>Te acompañamos desde la primera idea hasta que la pieza llega a tu casa, para que el espacio final sea el que imaginaste.</p>
+      <a id="btn-whatsapp" class="btn btn-dark" href="#" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <span class="brand">MAREA</span>
+  <small>© 2026 MAREA. Muebles y decoración.</small>
+</footer>
+
+<script src="datos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
