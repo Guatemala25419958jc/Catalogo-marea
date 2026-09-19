@@ -62,6 +62,12 @@
     top.appendChild(crear("span", "price", formatoPrecio(p.precio)));
     art.appendChild(top);
     art.appendChild(crear("p", "", p.desc));
+    var consultar = crear("a", "product-whatsapp", "Consultar por WhatsApp");
+    var mensaje = encodeURIComponent("Hola " + datos.marca + ", me interesa: " + p.nombre + " de la colección " + cat.nombre + ".");
+    consultar.href = "https://wa.me/" + (datos.whatsapp || "").replace(/D/g, "") + "?text=" + mensaje;
+    consultar.target = "_blank";
+    consultar.rel = "noopener";
+    art.appendChild(consultar);
     return art;
   }
 
