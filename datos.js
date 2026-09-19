@@ -7,7 +7,7 @@
 window.CATALOGO = {
   marca: "MAREA",
   moneda: "$",
-  whatsapp: "", // Número con código de país y sin signos, por ejemplo 50212345678. Vacío = abre WhatsApp sin número.
+  whatsapp: "50231930634", // Número con código de país y sin signos, por ejemplo 50212345678. Vacío = abre WhatsApp sin número.
   categorias: [
     {
       id: "sala",
