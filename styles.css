@@ -113,6 +113,13 @@ h2 { font-size: clamp(2rem, 3.6vw, 3.2rem); letter-spacing: -.005em; }
 .site-footer .brand { font-size: 1.2rem; }
 .site-footer small { color: rgba(245,240,231,.6); }
 
+
+/* WhatsApp flotante */
+.wa-float { position: fixed; right: clamp(1rem, 2.5vw, 2rem); bottom: clamp(1rem, 2.5vw, 2rem); z-index: 40; width: 3.6rem; height: 3.6rem; display: grid; place-items: center; border-radius: 50%; background: #25d366; color: #fff; box-shadow: 0 6px 20px rgba(0,0,0,.35); transition: transform .3s, box-shadow .3s; }
+.wa-float svg { width: 1.9rem; height: 1.9rem; }
+.wa-float:hover { transform: scale(1.08); box-shadow: 0 10px 26px rgba(0,0,0,.45); }
+.wa-float:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+
 /* Adaptable */
 @media (max-width: 1000px) {
   .hero { grid-template-columns: 1fr; min-height: 0; }
