@@ -101,10 +101,11 @@
   });
 
   // Botón de WhatsApp
-  var wa = document.getElementById("btn-whatsapp");
-  if (wa) {
-    var texto = encodeURIComponent("Hola " + datos.marca + ", quiero conocer el catálogo.");
-    var numero = (datos.whatsapp || "").replace(/\D/g, "");
-    wa.href = "https://wa.me/" + numero + "?text=" + texto;
-  }
+  var textoWa = encodeURIComponent("Hola " + datos.marca + ", quiero conocer el catálogo.");
+  var numeroWa = (datos.whatsapp || "").replace(/\D/g, "");
+  var enlaceWa = "https://wa.me/" + numeroWa + "?text=" + textoWa;
+  ["btn-whatsapp", "wa-flotante"].forEach(function (id) {
+    var el = document.getElementById(id);
+    if (el) el.href = enlaceWa;
+  });
 })();
